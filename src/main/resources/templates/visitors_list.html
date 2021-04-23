@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Visitors List </title>
+</head>
+<h1>Admins Only</h1>
+<body>
+<!--Table for admin-->
+<table border="2px" cellpadding="10px">
+    <thead>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Comments</td>
+        <td>Edit</td>
+        <td>Delete</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="vList:${visitors}">
+        <td th:text="${vList.id}">1</td>
+        <td th:text="${vList.name}">Name</td>
+        <td th:text="${vList.email}">myemail</td>
+        <td th:text="${vList.comment}">mycomment</td>
+        <td><a th:href="@{'/update/'+${vList.id}}"><button>Edit</button></a></td>
+        <td><a th:href="@{'/delete/'+${vList.id}}"><button>Delete</button></a></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>United Evangelical Church</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Demo project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+	<header class="header">
+			
+		<!-- Top Bar -->
+		<div class="top_bar">
+			<div class="top_bar_background" style="background-image:url(images/top_bar.jpg)"></div>
+			<div class="top_bar_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+								<ul class="top_bar_contact_list">
+									<li>
+										<i class="fa fa-envelope" aria-hidden="true"></i>
+										<div>Email: unitedevangelicalchurch@gmail.com</div>
+									</li>
+									<li>
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<div>Call Us: +234 8130656221</div>
+									</li>
+								</ul>
+								<div class="top_bar_social ml-auto">
+									<ul class="social_list">
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+
+		<!-- Header Content -->
+		<div class="header_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_content d-flex flex-row align-items-center justify-content-start">
+							<div class="logo_container">
+								<a href="#">
+									<div class="logo"><img src="images/ueclogo.jpg" alt=""></div>
+									<div  class="logo_text">United Evangelical Church</div>
+								</a>
+							</div>
+							<nav class="main_nav_contaner ml-auto">
+								<ul class="main_nav">
+									<li class="active"><a href="">home</a></li>
+									<li><a href="/about">about</a></li>
+									<li><a href="/sermon">sermons</a></li>
+									<li><a href="/event">events</a></li>
+									<li><a href="/contact">contact</a></li>
+								</ul>
+								<div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
+							</nav>
+
+							<!-- Hamburger -->
+
+							<div class="hamburger ml-auto">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header Search Panel -->
+		<div class="header_search_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_search_content d-flex flex-row align-items-center justify-content-end">
+							<form action="#" class="header_search_form">
+								<input type="search" class="search_input" placeholder="Search" required="required">
+								<button class="header_search_button d-flex flex-column align-items-center justify-content-center">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>			
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu d-flex flex-column align-items-center justify-content-center">
+		<div class="menu_content">
+			<div class="cross_1 d-flex flex-column align-items-center justify-content-center"><img src="images/logo.png" alt=""></div>
+			<form action="#" class="menu_search_form">
+				<input type="search" class="menu_search_input" placeholder="Search" required="required">
+				<button class="menu_search_button d-flex flex-column align-items-center justify-content-center">
+				<i class="fa fa-search" aria-hidden="true"></i>
+			</button>
+			</form>
+			<nav class="menu_nav">
+				<ul>
+					<li class="active"><a href="/home">Home</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/sermon">Sermons</a></li>
+					<li><a href="/event">Events</a></li>
+					<li><a href="/contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+	</div>
+
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background" style="background-image:url(images/index.jpg)"></div>
+		<div class="home_content text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_title">Abundance of Rain</div>
+						<div class="home_text">...For There is a Sound of Abundance of Rain <p>1st King 18:41</p></div>
+						<div class="button home_link"><a href="#">join with us</a></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Event -->
+
+	<div class="event">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="event_container d-flex flex-lg-row flex-column align-items-center justify-content-start">
+						<div class="event_date d-flex flex-column align-items-center justify-content-center">
+							<div class="event_day">18</div>
+							<div class="event_month">mar</div>
+						</div>
+						<div class="event_content">
+							<div class="event_title">UPCOMING EVENT: <a href="#">exploring the Christian faith</a></div>
+							<ul class="event_row">
+								<li>
+									<div class="event_icon"><img src="images/calendar.png" alt=""></div>
+									<span>08:00 AM - 11:00 AM</span>
+								</li>
+								<li>
+									<div class="event_icon"><img src="images/location.png" alt=""></div>
+									<span>1195 Lobortis Rd, New Orleans, New Hampshire</span>
+								</li>
+							</ul>
+						</div>
+						<div class="event_timer_container ml-lg-auto">
+							<ul class="event_timer">
+								<li><div id="day" class="event_num">00</div><div class="event_ss">day</div></li>
+								<li><div id="hour" class="event_num">00</div><div class="event_ss">hrs</div></li>
+								<li><div id="minute" class="event_num">00</div><div class="event_ss">min</div></li>
+								<li><div id="second" class="event_num">00</div><div class="event_ss">sec</div></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- About -->
+
+	<div class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container text-center">
+						<div class="section_title">welcome to our church</div>
+						<div class="section_subtitle">It's the start of an amazing journey of faith</div>
+					</div>
+				</div>
+			</div>
+			<div class="row about_row">
+				<div class="col-lg-6">
+					<div class="about_image"><img src="images/about.jpg" alt=""></div>
+				</div>
+				<div class="col-lg-6">
+					<div class="about_content">
+						<div class="about_text">
+							<p>
+								The United Evangelical Church (Founded as Qua Iboe Church)
+								is a Christian denomination in Nigeria. It has existed since 1887.
+								It has more than 1,000 congregations and 2,000,000 members.
+								The church was founded by an Irish missionary,
+								Rev.Samuel Alexander Bill the first of many missionaries who served with The Qua Iboe Mission,
+								now known as Mission Africa, which is based in Belfast.
+								The Mission and Church were initially named after the place where the mission began its work,
+								at Ibeno near the Qua Iboe River in the present day Akwa Ibom State of Nigeria. The church and mission
+								have been entirely independent entities since 1984, but the two continue to work together closely.
+								The church has its headquarters at Uyo in Akwa Ibom State.
+								United Evangelical Church is a Bible believing church and does not practice doctrines that do not have any biblical background.
+						</div>
+						<div class="button about_button"><a href="https://en.wikipedia.org/wiki/QIC-United_Evangelical_Church">read story</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Sermons -->
+
+	<div class="sermons">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container text-center">
+						<div class="section_title">sermons today</div>
+						<div class="section_subtitle">Our lives in praising God</div>
+					</div>
+				</div>
+			</div>
+			<div class="row sermons_row">
+				<div class="col-lg-4 sermon_col">
+					<div class="card">
+						<img class="card-img-top" src="images/sermon_1.jpg" alt="">
+						<div class="card-body text-center">
+							<div class="card-title sermon_title"><a href="sermon.html">Sermons on Prayer:  Running Well, FinIshing Strong</a></div>
+							<div class="card-text sermon_info_container">
+								<div class="sermon_info">
+									<div class="sermon_info_title">Pastor: </div>
+									<ul class="sermon_info_list">
+										<li><a href="#">Josh Brighton</a></li>
+									</ul>
+								</div>
+								<div class="sermon_info">
+									<div class="sermon_info_title">Categories: </div>
+									<ul class="sermon_info_list">
+										<li><a href="#">God, </a></li>
+										<li><a href="#">Prayer</a></li>
+									</ul>
+								</div>
+								<div class="sermon_links">
+									<ul>
+										<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 sermon_col">
+					<div class="card">
+						<img class="card-img-top" src="images/sermon_2.jpg" alt="">
+						<div class="card-body text-center">
+							<div class="card-title sermon_title"><a href="/sermon">Sermons on Faith: A Life Worth Living, A new purpose</a></div>
+							<div class="card-text sermon_info_container">
+								<div class="sermon_info">
+									<div class="sermon_info_title">Pastor: </div>
+									<ul class="sermon_info_list">
+										<li><a href="#">Julia Amber</a></li>
+									</ul>
+								</div>
+								<div class="sermon_info">
+									<div class="sermon_info_title">Categories: </div>
+									<ul class="sermon_info_list">
+										<li><a href="#">God, </a></li>
+										<li><a href="#">Faith</a></li>
+									</ul>
+								</div>
+								<div class="sermon_links">
+									<ul>
+										<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 sermon_col">
+					<div class="card">
+						<img class="card-img-top" src="images/sermon_3.jpg" alt="">
+						<div class="card-body text-center">
+							<div class="card-title sermon_title"><a href="/sermon">Sermons for Communion Services: Come to the Table</a></div>
+							<div class="card-text sermon_info_container">
+								<div class="sermon_info">
+									<div class="sermon_info_title">Pastor: </div>
+									<ul class="sermon_info_list">
+										<li><a href="#">Ashley Young</a></li>
+									</ul>
+								</div>
+								<div class="sermon_info">
+									<div class="sermon_info_title">Categories: </div>
+									<ul class="sermon_info_list">
+										<li><a href="#">God, </a></li>
+										<li><a href="#">Communion</a></li>
+									</ul>
+								</div>
+								<div class="sermon_links">
+									<ul>
+										<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Mission -->
+
+	<div class="mission">
+		<div class="mission_background parallax-window" data-parallax="scroll" data-image-src="images/mission.jpg" data-speed="0.8"></div>
+		<div class="mission_items d-flex flex-row flex-wrap align-items-start justify-content-start">
+
+			<div class="mission_item text-center">
+				<div class="mission_icon"><i class="fa fa-bell-o" aria-hidden="true"></i></div>
+				<div class="mission_title">our mission</div>
+				<div class="mission_text">Lorem ipsum dolor  amet, consectet adipiscing doelit. Sed a mauri suscipita utrum arcu , gravida nisl. Interdum mante ipsum.</div>
+			</div>
+
+			<div class="mission_item text-center">
+				<div class="mission_icon"><i class="fa fa-flag-o" aria-hidden="true"></i></div>
+				<div class="mission_title">our community</div>
+				<div class="mission_text">Lorem ipsum dolor  amet, consectet adipiscing doelit. Sed a mauri suscipita utrum arcu , gravida nisl. Interdum mante ipsum.</div>
+			</div>
+
+			<div class="mission_item text-center">
+				<div class="mission_icon"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+				<div class="mission_title">our belief</div>
+				<div class="mission_text">Lorem ipsum dolor  amet, consectet adipiscing doelit. Sed a mauri suscipita utrum arcu , gravida nisl. Interdum mante ipsum.</div>
+			</div>
+
+			<div class="mission_item text-center">
+				<div class="mission_icon"><i class="fa fa-moon-o" aria-hidden="true"></i></div>
+				<div class="mission_title">our faith</div>
+				<div class="mission_text">Lorem ipsum dolor  amet, consectet adipiscing doelit. Sed a mauri suscipita utrum arcu , gravida nisl. Interdum mante ipsum.</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Events -->
+
+	<div class="events">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container text-center">
+						<div class="section_title">upcoming events</div>
+						<div class="section_subtitle">Experience God's Presence</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="events_items d-flex flex-lg-row flex-column align-items-lg-start align-items-center justify-content-lg-between justify-content-center">
+
+			<!-- Event -->
+			<div class="events_item">
+				<div class="events_item_image"><img src="images/event_1.jpg" alt=""></div>
+				<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="event_date d-flex flex-column align-items-center justify-content-center">
+						<div class="event_day">18</div>
+						<div class="event_month">mar</div>
+					</div>
+					<div class="event_content">
+						<div class="event_title"><a href="#">exploring the Christian faith</a></div>
+						<ul class="event_row">
+							<li>
+								<div class="event_icon"><img src="images/calendar.png" alt=""></div>
+								<span>08:00 AM - 11:00 AM</span>
+							</li>
+							<li>
+								<div class="event_icon"><img src="images/location.png" alt=""></div>
+								<span>1195 Lobortis Rd, New Orleans, New Hampshire</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Event -->
+			<div class="events_item">
+				<div class="events_item_image"><img src="images/event_2.jpg" alt=""></div>
+				<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="event_date d-flex flex-column align-items-center justify-content-center">
+						<div class="event_day">18</div>
+						<div class="event_month">mar</div>
+					</div>
+					<div class="event_content">
+						<div class="event_title"><a href="#">To Love and to Cherish, The Wedding</a></div>
+						<ul class="event_row">
+							<li>
+								<div class="event_icon"><img src="images/calendar.png" alt=""></div>
+								<span>08:00 AM - 11:00 AM</span>
+							</li>
+							<li>
+								<div class="event_icon"><img src="images/location.png" alt=""></div>
+								<span>1195 Lobortis Rd, New Orleans, New Hampshire</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Event -->
+			<div class="events_item">
+				<div class="events_item_image"><img src="images/event_3.jpg" alt=""></div>
+				<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="event_date d-flex flex-column align-items-center justify-content-center">
+						<div class="event_day">18</div>
+						<div class="event_month">mar</div>
+					</div>
+					<div class="event_content">
+						<div class="event_title"><a href="#">The Christian Community in America</a></div>
+						<ul class="event_row">
+							<li>
+								<div class="event_icon"><img src="images/calendar.png" alt=""></div>
+								<span>08:00 AM - 11:00 AM</span>
+							</li>
+							<li>
+								<div class="event_icon"><img src="images/location.png" alt=""></div>
+								<span>1195 Lobortis Rd, New Orleans, New Hampshire</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Donations -->
+
+	<div class="donations">
+		<div class="donations_background parallax-window" data-parallax="scroll" data-image-src="images/donation.jpg" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="donations_content">
+						<div class="donation_title">help children get an education</div>
+						<div class="donation_info_container">
+							<div class="donation_info">
+								<div class="donation_info_title">Donation Caller: </div>
+								<ul class="donation_info_list">
+									<li><a href="#">John Connor</a></li>
+								</ul>
+							</div>
+							<div class="donation_info">
+								<div class="donation_info_title">Categories: </div>
+								<ul class="donation_info_list">
+									<li><a href="#">Education, </a></li>
+									<li><a href="#">Children</a></li>
+								</ul>
+							</div>
+							<div class="donation_info">
+								<div class="donation_info_title">On: </div>
+								<ul class="donation_info_list">
+									<li><a href="#">Friday 16 MAR, 2018</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="donation_text">
+							<p>Mauris eleifend dolor ante, at fringilla magna dignissim et. Maecenas imperdiet quam quis erat molestie facilisis. Ut in condimentum ipsum. Aenean ac congue turpis. Nunc luctus ligula tellus, in pellentesque leo ullamcorper in.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="donation_details_container">
+						<div class="donation_details">
+							<div class="donation_funds">
+								<div class="donation_funds_title">Remaining: </div>
+								<div class="donations_funds_value">$2,100</div>
+							</div>
+							<div class="donation_progress_container">
+								<div class="donation_progress_outer">
+									<div class="donation_progress" style="width: 70%;"><div class="donation_progress_value">70%</div></div>
+								</div>
+								<div class="donation_info d-flex flex-row align-items-center justify-content-start">
+									<div class="donation_current">Raised: <span>$5,000</span></div>
+									<div class="donation_goal ml-auto">Goal: <span>$7,100</span></div>
+								</div>
+								<div class="button donation_button"><a href="#">donate now</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Quote -->
+
+	<div class="quote">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="quote_container text-center">
+						<div class="quote_quote">“Wherever the bishop appears, there let the people be, even as wheresoever Christ Jesus is, there is the catholic church.”</div>
+						<div class="quote_icon"><img src="images/quote.png" alt=""></div>
+						<div class="quote_source">Ignatius of Antioch</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Gallery -->
+
+	<div class="gallery d-flex flex-row flex-wrap align-items-start justify-content-start">
+		<div class="gallery_item">
+			<a class="colorbox" href="images/gallery_1.jpg">
+				<img src="images/gallery_1.jpg" alt="https://unsplash.com/@mantashesthaven">
+			</a>
+		</div>
+		<div class="gallery_item">
+			<a class="colorbox" href="images/gallery_2.jpg">
+				<img src="images/gallery_2.jpg" alt="https://unsplash.com/@mantashesthaven">
+			</a>
+		</div>
+		<div class="gallery_item">
+			<a class="colorbox" href="images/gallery_3.jpg">
+				<img src="images/gallery_3.jpg" alt="https://unsplash.com/@mantashesthaven">
+			</a>
+		</div>
+		<div class="gallery_item">
+			<a class="colorbox" href="images/gallery_4.jpg">
+				<img src="images/gallery_4.jpg" alt="https://unsplash.com/@mantashesthaven">
+			</a>
+		</div>
+		<div class="gallery_item">
+			<a class="colorbox" href="images/gallery_5.jpg">
+				<img src="images/gallery_5.jpg" alt="https://unsplash.com/@mantashesthaven">
+			</a>
+		</div>
+		<div class="gallery_item">
+			<a class="colorbox" href="images/gallery_6.jpg">
+				<img src="images/gallery_6.jpg" alt="https://unsplash.com/@mantashesthaven">
+			</a>
+		</div>
+		<div class="gallery_item">
+			<a class="colorbox" href="images/gallery_7.jpg">
+				<img src="images/gallery_7.jpg" alt="https://unsplash.com/@mantashesthaven">
+			</a>
+		</div>
+		<div class="gallery_item">
+			<a class="colorbox" href="images/gallery_8.jpg">
+				<img src="images/gallery_8.jpg" alt="https://unsplash.com/@mantashesthaven">
+			</a>
+		</div>
+		<div class="gallery_item">
+			<a class="colorbox" href="images/gallery_9.jpg">
+				<img src="images/gallery_9.jpg" alt="https://unsplash.com/@mantashesthaven">
+			</a>
+		</div>
+		<div class="gallery_item">
+			<a class="colorbox" href="images/gallery_10.jpg">
+				<img src="images/gallery_10.jpg" alt="https://unsplash.com/@mantashesthaven">
+			</a>
+		</div>
+	</div>
+
+	<!-- Latest News -->
+
+	<div class="latest_news">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container text-center">
+						<div class="section_title">latest news</div>
+						<div class="section_subtitle">Be part of a community of people experiencing God together.</div>
+					</div>
+				</div>
+			</div>
+			<div class="row news_row">
+
+				<!-- News Post -->
+				<div class="col-xl-4 col-lg-6 news_post_col">
+					<div class="news_post">
+						<div class="news_image"><img src="images/news_1.jpg" alt=""></div>
+						<div class="news_post_content">
+							<div class="news_post_title">
+								<a href="blog_single.html">Find out why a priest prays around her hometown</a>
+							</div>
+							<div class="news_post_meta">
+								<ul>
+									<li><i class="fa fa-user" aria-hidden="true"></i><a href="#">Josh Brighton</a></li>
+									<li><i class="fa fa-calendar-o" aria-hidden="true"></i><a href="#">08 MAR, 2018</a></li>
+									<li><i class="fa fa-comment" aria-hidden="true"></i><a href="#">15</a></li>
+								</ul>
+							</div>
+							<div class="news_post_text">
+								<p>Integer luctus diam acto scerisque consectetur. Vimus euismod nec lacus sit amet. Aenean interdus mid vitae blandit  porta. Quisque dignissim commodo congue efficitur...</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- News Post -->
+				<div class="col-xl-4 col-lg-6 news_post_col">
+					<div class="news_post">
+						<div class="news_image"><img src="images/news_2.jpg" alt=""></div>
+						<div class="news_post_content">
+							<div class="news_post_title">
+								<a href="blog_single.html">Moderator joins Pope Francis in call to prayer for peace</a>
+							</div>
+							<div class="news_post_meta">
+								<ul>
+									<li><i class="fa fa-user" aria-hidden="true"></i><a href="#">Ashley Young</a></li>
+									<li><i class="fa fa-calendar-o" aria-hidden="true"></i><a href="#">08 MAR, 2018</a></li>
+									<li><i class="fa fa-comment" aria-hidden="true"></i><a href="#">12</a></li>
+								</ul>
+							</div>
+							<div class="news_post_text">
+								<p>Integer luctus diam acto scerisque consectetur. Vimus euismod nec lacus sit amet. Aenean interdus mid vitae blandit  porta. Quisque dignissim commodo congue efficitur...</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- News Post -->
+				<div class="col-xl-4 col-lg-6 news_post_col">
+					<div class="news_post">
+						<div class="news_image"><img src="images/news_3.jpg" alt=""></div>
+						<div class="news_post_content">
+							<div class="news_post_title">
+								<a href="blog_single.html">Church plays a major role in tackling loneliness</a>
+							</div>
+							<div class="news_post_meta">
+								<ul>
+									<li><i class="fa fa-user" aria-hidden="true"></i><a href="#">Josh Brighton</a></li>
+									<li><i class="fa fa-calendar-o" aria-hidden="true"></i><a href="#">07 MAR, 2018</a></li>
+									<li><i class="fa fa-comment" aria-hidden="true"></i><a href="#">10</a></li>
+								</ul>
+							</div>
+							<div class="news_post_text">
+								<p>Integer luctus diam acto scerisque consectetur. Vimus euismod nec lacus sit amet. Aenean interdus mid vitae blandit  porta. Quisque dignissim commodo congue efficitur...</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="footer_background parallax-window" data-parallax="scroll" data-image-src="images/footer.jpg" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+
+				<!-- Footer - Contact -->
+				<div class="col-lg-4 footer_col">
+					<div class="footer_column footer_contact_column">
+						<div class="footer_logo_container">
+							<a href="#">
+								<div class="footer_logo"><img src="images/ueclogo.jpg" alt=""></div>
+								<div class="footer_logo_text">United Family</div>
+							</a>
+						</div>
+						<div class="footer_contact">
+							<ul>
+								<li><div><i class="fa fa-map-marker" aria-hidden="true"></i></div><span>1195 Lobortis Rd, New Orleans, New Hampshire</span></li>
+								<li><div><i class="fa fa-phone" aria-hidden="true"></i></div><span>+1 234 800 8080</span></li>
+								<li><div><i class="fa fa-envelope" aria-hidden="true"></i></div><span>info.deercreative@gmail.com</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Footer - Links -->
+				<div class="col-lg-4 footer_col">
+					<div class="footer_column footer_links">
+						<div class="footer_title">useful links</div>
+						<ul class="footer_links_list">
+							<li><a href="/about"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About us</a></li>
+							<li><a href="/contact"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a></li>
+							<li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Donation</a></li>
+							<li><a href="/sermon"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Sermons</a></li>
+							<li><a href="/event"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Events</a></li>
+							<li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Service</a></li>
+							<li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Media</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Footer - Subscribe -->
+				<div class="col-lg-4 footer_col">
+					<div class="footer_column footer_subscribe">
+						<div class="footer_title">subscribe</div>
+						<div class="footer_text">Join our weekly email newsletter to receive news, events and other announcements about what is going on at our church.</div>
+						<div class="footer_form_container">
+							<form action="#" class="footer_form">
+								<div>
+									<input type="email" class="subscribe_input" placeholder="Enter your email" required="required">
+									<button class="subscribe_button trans_200" type="submit">subscribe</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="row copyright_row">
+				<div class="col">
+					<div class="copyright_container d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+
+						<div class="footer_social ml-lg-auto">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="plugins/colorbox/jquery.colorbox-min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
